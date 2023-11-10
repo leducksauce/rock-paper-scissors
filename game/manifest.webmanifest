@@ -1,0 +1,15 @@
+{
+    "name": "Rock-Paper-Scissors game",
+    "short_name": "R-P-S",
+    "start_url": "https://henrimuldre.com/demo/rock-paper-scissors/",
+    "display": "standalone",
+    "background_color": "#1e293b",
+    "description": "A Rock-Paper-Scissors game made by Henri Muldre using HTML, TailwindCSS and JavaScript.",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

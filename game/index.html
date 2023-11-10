@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock-Paper-Scissors - Demo - Henri Muldre</title>
+    <meta name="theme-color" content="#1e293b">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="https://henrimuldre.com/resources/favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles-202311100021.css">
+    <script src="app-202311100021.js"></script>
+</head>
+
+<body class="bg-slate-200 dark:bg-slate-800 font-sans text-base">
+    <main class="m-6 md:max-w-3xl md:m-auto text-slate-800 dark:text-slate-200">
+        <h1 class="text-2xl font-bold mt-8 mb-5" title="Rock-Paper-Scissors game - build 202311100021">
+            Rock-Paper-Scissors</h1>
+
+        <div class="my-5 p-10 shadow-lg rounded bg-slate-100 dark:bg-slate-700">
+            <p class="py-2">Choose rock, paper or scissors.</p>
+
+            <!-- Choice dropdown and play button -->
+            <div class="py-2 grid grid-cols-1 sm:grid-cols-2 md:block">
+                <select title="Choose rock, paper or scissors." name="choices" id="user-choice"
+                    class="bg-slate-100 border border-slate-400 text-sm rounded h-12 md:w-48 p-2.5 focus:ring-blue-500 focus:border-blue-500 hover:shadow-md dark:bg-slate-600 dark:border-slate-300/20 dark:text-slate-200 mb-4 sm:mb-0 transition-all">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                <button id="startGameBtn" type="button" title="Start game"
+                    class="text-white bg-slate-500 hover:bg-slate-600 hover:shadow-md active:bg-slate-700 dark:bg-slate-800 dark:hover:bg-slate-900 dark:active:bg-slate-950 transition-all py-2 px-4 sm:ml-6 rounded h-12 md:w-32 touch-manipulation"
+                    onclick="startGame()" data-modal="">Play</button>
+            </div>
+
+            <!-- Display user and computer choice -->
+            <hr id="hr-1" class="hidden border-solid border-slate-900/10 dark:border-slate-300/20 my-6 appHr">
+            <p id="choice1" class=""></p>
+            <p id="choice2" class=""></p>
+
+            <!-- Display game results -->
+            <hr id="hr-2" class="hidden border-solid border-slate-900/10 dark:border-slate-300/20 my-6">
+            <p id="results" class=""></p>
+
+            <!-- Display win/lose/tie count -->
+            <hr id="hr-3" class="hidden border-solid border-slate-900/10 dark:border-slate-300/20 my-6">
+            <p id="win-count" class="hidden" value="0"></p>
+            <p id="lose-count" class="hidden" value="0"></p>
+            <p id="tie-count" class="hidden" value="0"></p>
+
+        </div>
+    </main>
+    <footer class="m-6 md:max-w-3xl md:m-auto">
+        <p class="pt-3 text-xs text-slate-400 dark:text-slate-600">Made by Henri</p>
+    </footer>
+
+</body>
+
+</html>
